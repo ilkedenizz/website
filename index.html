@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Premium Personal Developer Website">
+    <title>Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cursor-glow"></div>
+    <div class="background-particles"></div>
+    <header class="header">
+        <nav class="nav container">
+            <a href="#" class="logo">Dev<span>Portfolio</span></a>
+            <ul class="nav__list">
+                <li><a href="#about" class="nav__link">About</a></li>
+                <li><a href="#projects" class="nav__link">Projects</a></li>
+                <li><a href="#contact" class="nav__link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero section" id="hero">
+            <div class="container hero__container">
+                <div class="hero__content reveal-up">
+                    <h1 class="hero__title">Racoon</h1>
+                    <h2 class="hero__subtitle">Computer Engineering Student</h2>
+                    <p class="hero__tagline">Crafting digital experiences through elegant code.</p>
+                    <div class="hero__buttons">
+                        <a href="#projects" class="btn btn--primary magnetic">View Projects</a>
+                        <a href="https://github.com/ilkedenizz" target="_blank" class="btn btn--secondary magnetic">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About Section -->
+        <section class="about section" id="about">
+            <div class="container reveal-up">
+                <h2 class="section__title">About Me</h2>
+                <div class="about__content glass-card">
+                    <p>I have a deep passion for programming and an insatiable curiosity for learning new technologies. My focus is on solving complex problems with clean, maintainable code.</p>
+                    <p>I love building projects that challenge me to grow as a developer and deliver impactful solutions.</p>
+                </div>
+            </div>
+        </section>
+        <!-- Featured Projects Section -->
+        <section class="projects section" id="projects">
+            <div class="container">
+                <h2 class="section__title reveal-up">Featured Projects</h2>
+                <div class="projects__grid">
+                    <div class="project-card glass-card tilt-card reveal-up">
+                        <div class="project-card__image-wrapper">
+                            <div class="project-card__image-placeholder">Project Image</div>
+                        </div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">E-commerce API</h3>
+                            <p class="project-card__description">A robust and scalable REST API for e-commerce platforms.</p>
+                            <div class="project-card__tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">Django</span>
+                                <span class="tag">PostgreSQL</span>
+                            </div>
+                            <div class="project-card__links">
+                                <a href="#" class="project-card__link">GitHub</a>
+                                <a href="#" class="project-card__link">Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card glass-card tilt-card reveal-up" style="transition-delay: 100ms;">
+                        <div class="project-card__image-wrapper">
+                            <div class="project-card__image-placeholder">Project Image</div>
+                        </div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">Portfolio UI</h3>
+                            <p class="project-card__description">A premium, modern developer portfolio website.</p>
+                            <div class="project-card__tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">JavaScript</span>
+                            </div>
+                            <div class="project-card__links">
+                                <a href="#" class="project-card__link">GitHub</a>
+                                <a href="#" class="project-card__link">Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Tech Stack Section -->
+        <section class="tech section" id="tech">
+            <div class="container reveal-up">
+                <h2 class="section__title">Tech Stack</h2>
+                <div class="tech__grid">
+                    <div class="tech-item glass-card"><span class="tech-name">HTML</span></div>
+                    <div class="tech-item glass-card"><span class="tech-name">CSS</span></div>
+                    <div class="tech-item glass-card"><span class="tech-name">JavaScript</span></div>
+                    <div class="tech-item glass-card"><span class="tech-name">Python</span></div>
+                    <div class="tech-item glass-card"><span class="tech-name">Git & GitHub</span></div>
+                    <div class="tech-item glass-card"><span class="tech-name">Linux</span></div>
+                    <div class="tech-item glass-card"><span class="tech-name">VS Code</span></div>
+                    <div class="tech-item glass-card"><span class="tech-name">REST APIs</span></div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Current Focus Section -->
+        <section class="focus section" id="focus">
+            <div class="container reveal-up">
+                <h2 class="section__title">Current Focus</h2>
+                <div class="focus__list glass-card">
+                    <div class="focus-item">
+                        <span class="focus-item__title">REST APIs</span>
+                        <div class="progress-bar"><div class="progress-fill" style="width: 80%"></div></div>
+                    </div>
+                    <div class="focus-item">
+                        <span class="focus-item__title">Backend Development</span>
+                        <div class="progress-bar"><div class="progress-fill" style="width: 70%"></div></div>
+                    </div>
+                    <div class="focus-item">
+                        <span class="focus-item__title">Modern JavaScript</span>
+                        <div class="progress-bar"><div class="progress-fill" style="width: 90%"></div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Developer Journey Section -->
+        <section class="journey section" id="journey">
+            <div class="container reveal-up">
+                <h2 class="section__title">Developer Journey</h2>
+                <div class="timeline">
+                    <div class="timeline__item reveal-up">
+                        <div class="timeline__node"></div>
+                        <div class="timeline__content glass-card">
+                            <h3 class="timeline__title">Started learning programming</h3>
+                        </div>
+                    </div>
+                    <div class="timeline__item reveal-up">
+                        <div class="timeline__node"></div>
+                        <div class="timeline__content glass-card">
+                            <h3 class="timeline__title">Built first website</h3>
+                        </div>
+                    </div>
+                    <div class="timeline__item reveal-up">
+                        <div class="timeline__node"></div>
+                        <div class="timeline__content glass-card">
+                            <h3 class="timeline__title">Created API projects</h3>
+                        </div>
+                    </div>
+                    <div class="timeline__item reveal-up">
+                        <div class="timeline__node"></div>
+                        <div class="timeline__content glass-card">
+                            <h3 class="timeline__title">Learning backend</h3>
+                        </div>
+                    </div>
+                    <div class="timeline__item reveal-up">
+                        <div class="timeline__node"></div>
+                        <div class="timeline__content glass-card">
+                            <h3 class="timeline__title">Future goals</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Project Categories Section -->
+        <section class="categories section" id="categories">
+            <div class="container reveal-up">
+                <h2 class="section__title">Categories</h2>
+                <div class="categories__grid">
+                    <a href="#" class="category-card glass-card">Old Games Archive</a>
+                    <a href="#" class="category-card glass-card">API Projects</a>
+                    <a href="#" class="category-card glass-card">Experiments</a>
+                    <a href="#" class="category-card glass-card">Web Apps</a>
+                    <a href="#" class="category-card glass-card">Open Source</a>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Section -->
+        <section class="contact section" id="contact">
+            <div class="container reveal-up">
+                <h2 class="section__title">Let's build something.</h2>
+                <div class="contact__links">
+                    <a href="mailto:hello@example.com" class="btn btn--primary magnetic">Email Me</a>
+                    <a href="https://github.com" target="_blank" class="btn btn--secondary magnetic">GitHub Profile</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container footer__container">
+            <a href="#" class="footer__logo">Dev<span>Portfolio</span></a>
+            <p class="footer__copy">&copy; 2026. Built from scratch.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
