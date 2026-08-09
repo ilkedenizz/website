@@ -3,6 +3,23 @@ document.addEventListener('DOMContentLoaded', () => {
     // Check for reduced motion preference
     const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
+    // 0. Theme Toggle
+    const themeToggleBtn = document.querySelector('.theme-toggle');
+    if (themeToggleBtn) {
+        themeToggleBtn.addEventListener('click', () => {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            
+            if (newTheme === 'dark') {
+                document.documentElement.setAttribute('data-theme', 'dark');
+            } else {
+                document.documentElement.removeAttribute('data-theme');
+            }
+            
+            localStorage.setItem('theme', newTheme);
+        });
+    }
+
     // 1. Mobile Menu Toggle
     const menuToggle = document.querySelector('.menu-toggle');
     const navList = document.querySelector('.nav__list');
@@ -36,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
 
             // Cursor hover effects on links and buttons
-            const hoverElements = document.querySelectorAll('a, button, .glass-card, .project-card__visual');
+            const hoverElements = document.querySelectorAll('a, button, .glass-card, .project-card__icon');
             hoverElements.forEach(el => {
                 el.addEventListener('mouseenter', () => cursor.classList.add('active'));
                 el.addEventListener('mouseleave', () => cursor.classList.remove('active'));
