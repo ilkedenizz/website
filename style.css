@@ -435,12 +435,6 @@ svg {
     background: var(--surface-color);
     border: 1px solid var(--card-border);
     transition: transform var(--transition);
-    
-    /* Prevent Safari/WebKit blur overflow bugs */
-    transform: translateZ(0);
-    -webkit-mask-image: -webkit-radial-gradient(white, black);
-    isolation: isolate;
-    z-index: 1;
 }
 
 /* CSS Premium Visuals for projects */
@@ -448,57 +442,14 @@ svg {
     background: linear-gradient(135deg, rgba(79,70,229,0.2), rgba(14,165,233,0.1));
     position: relative;
 }
-.visual-lixor::after {
-    content: '';
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    background: var(--primary-color);
-    filter: blur(60px);
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0.5;
-    z-index: -1;
-}
-
 .visual-eclipsia {
     background: linear-gradient(135deg, rgba(139,92,246,0.2), rgba(236,72,153,0.1));
     position: relative;
-}
-.visual-eclipsia::after {
-    content: '';
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    background: var(--accent-color);
-    filter: blur(60px);
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0.5;
-    z-index: -1;
 }
 
 .visual-midnight {
     background: linear-gradient(135deg, rgba(16,185,129,0.2), rgba(5,150,105,0.1));
     position: relative;
-}
-.visual-midnight::after {
-    content: '';
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    background: #10B981;
-    filter: blur(60px);
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0.4;
-    z-index: -1;
 }
 
 .project-card:hover .project-card__visual {
